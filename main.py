@@ -36,4 +36,5 @@ for i in t:
     i.join()
 
 df = pd.DataFrame(data)
+df.columns = ['ลำดับ', 'Diagcode', 'Diagename', 'Diagtname']
 df.to_csv('icd.csv', encoding='utf-8-sig', index=False)
